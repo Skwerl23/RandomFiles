@@ -1,9 +1,8 @@
 import re
 age = input("Please enter age: ")
 while not re.match(r'^[0-9]{1,3}$',age):
-    if not re.match(r'^[0-9]{1,3}$',age):
-        print("You entered an invalid value, please try again.")
-        age = input("Please enter age: ")
+    print("You entered an invalid value, please try again.")
+    age = input("Please enter age: ")
 age = int(age)
 if age <= 24:
     print("You are Gen-Z")
